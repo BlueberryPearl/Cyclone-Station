@@ -1,0 +1,171 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f2f3;
+    color: #62466b;
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.3) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    border-color: #bebebe;
+    overflow-y: auto;
+    height: 600px;
+    min-width: 216px;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #775881;
+    border-radius: 100vw;
+    border: 1.5px solid #f4f2f3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3b0e4a;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f2f3;
+    border-radius: 100vw;
+}
+
+
+.menu-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.sidebar-themes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    background-color: #fefcfd;
+
+}
+
+.item-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.list-item>div {
+    display: grid;
+    grid-template-columns: repeat(4, 35px);
+    column-gap: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(55, 39, 66);
+    background-color: transparent;
+}
+
+.edit-description {
+    font-size: 10px;
+    color: #786c7e;
+    margin-top: 0px;
+    resize: vertical;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 4em;
+    background-color: #f4f4f4;
+    padding: 3px;
+
+}
+
+.list-item>button {
+    width: 2em;
+    align-content: center;
+    cursor: pointer;
+    align-content: end;
+    margin-left: 160px;
+}
+
+.list-item-block {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.list-item-block>p {
+    font-size: 10px;
+    margin: 0px;
+}
+
+.list-item-colour {
+    border-radius: 7px;
+    height: 3em;
+}
+
+
+.item-title,
+.edit-description {
+    border: 0;
+}
+
+.item-title:hover,
+.edit-description:hover {
+    background-color: #eae4eb;
+    cursor: pointer;
+}
+
+.item-title:focus,
+.edit-description:focus {
+    outline: 1px solid #62466b;
+    background-color: #eae4eb;
+}
+
+.add-title {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+.remove {
+    color: whitesmoke;
+    background-color: #3b3355;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: all .4s ease;
+}
+
+
+.remove:hover {
+    fill: #2d2327;
+    background-color: #e6d6eb;
+}
+
+.edit-icon {
+    color: #3b3355;
+    height: 9px;
+}
