@@ -1,7 +1,7 @@
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
 
-
+// this is the modal component for saving a colour theme and adding a title and description to it.
 export default function Modal(props) {
     const [titleVal, setTitleVal] = React.useState("")
     function changeTitle(event) {
