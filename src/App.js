@@ -1,5 +1,5 @@
 import React from "react";
-import Parent from "./Components/Parent";
+import Home from "./Pages/Home";
 
 
 
@@ -13,7 +13,7 @@ export default function App() {
 
             </header>
             <main>
-                <Parent />
+                <Home />
             </main>
 
             <footer>Made by Najette Chouchane</footer>

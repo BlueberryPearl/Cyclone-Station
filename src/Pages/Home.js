@@ -1,16 +1,16 @@
 import React from "react";
 import 'react-toastify/dist/ReactToastify.css';
 //https://www.npmjs.com/package/react-toastify
-import Modal from "./Modal";
-import List from "./List";
-import Time from "./Time"
-import Place from "./Place";
-import Colour from "./Colour";
+import Modal from "../Components/Modal";
+import List from "../Components/List";
+import Time from "../Components/Time"
+import Place from "../Components/Place";
+import Colour from "../Components/Colour";
 import { nanoid } from "nanoid";
 
 
 
-export default function Parent() {
+export default function Home() {
 
 
     const [colour, setColour] = React.useState({ value: ['', '', '', ''], activated: false })
