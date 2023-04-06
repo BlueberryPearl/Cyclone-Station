@@ -10,8 +10,8 @@ export default function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
+                    <Route path="Landing-page" element={<LandingPage />} />
                     <Route path="Home" element={<Home />} />
-                    <Route path="LandingPage" element={<LandingPage />} />
                     <Route path="SavedThemes" element={<SavedThemes />} />
                 </Route>
             </Routes>
