@@ -13,8 +13,8 @@ export default function Navbar() {
                 </li>
             </ul>
             <div className="nav-buttons">
-                <button>Login</button>
-                <button>Sign Up</button>
+                <button className="nav-button">Login</button>
+                <button className="nav-button">Sign Up</button>
             </div>
         </nav>
     )
