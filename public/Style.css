@@ -1,31 +1,6 @@
 body {
     background-color: #fefcfd;
-    font-family: 'Neucha', cursive;
     margin: 0px;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 750px;
-}
-
-.quote {
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    position: absolute;
-    top: 20px;
-    padding: 0px 40px;
-    text-indent: 50px;
-    color: #3b3355;
-    white-space: nowrap;
-}
-
-svg {
-    z-index: -1;
-    width: 100%;
 }
 
 

@@ -1,20 +1,18 @@
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
-
+import { BrowserRouter, Route, Link, NavLink } from "react-router-dom";
+import './Navbar.css';
 export default function Navbar() {
     return (
-        <nav>
-            <div>
-                <ul>
-                    <li>
-                        <Link to="/Home">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/SavedThemes">Saved Themes</Link>
-                    </li>
-                </ul>
-            </div>
-            <div>
+        <nav className="navbar">
+            <ul className="nav-pages">
+                <li className="nav-home">
+                    <NavLink className="NavLink" to="/Home">Home</NavLink>
+                </li>
+                <li>
+                    <NavLink className="NavLink" to="/SavedThemes">Saved Themes</NavLink>
+                </li>
+            </ul>
+            <div className="nav-buttons">
                 <button>Login</button>
                 <button>Sign Up</button>
             </div>
