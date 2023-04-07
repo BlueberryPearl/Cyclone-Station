@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./Pages/Home";
-import LandingPage from "./Pages/Landing-page";
+import LandingPage from "./Pages/LandingPage/Landing-page"
 import Layout from "./Pages/Layout";
 import SavedThemes from "./Pages/SavedThemes";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
