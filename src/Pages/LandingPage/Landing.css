@@ -25,12 +25,16 @@ body {
 .landing-header {
     font-size: 28px;
     font-weight: 500;
+    color: #778bf9;
+    text-shadow: 0px 1px 2px rgb(149, 166, 202);
 }
 
 .landing-paragraph {
     font-size: 12px;
     margin: 0;
     margin-bottom: 20px;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px rgb(188, 174, 211);
 }
 
 .landing-button {
@@ -44,13 +48,21 @@ body {
     cursor: pointer;
     transition: all 0.5s ease;
     box-shadow: 0px 3px 6px 0px rgba(99, 165, 227, 0.71);
+    border: 1px solid #80ADD6;
+    color: #8699FF;
+    background-color: #FFFBF3;
+}
+
+.landing-button:hover {
+    background-color: #f977e3;
+    color: #feffff;
 }
 
 .squares {
     width: 40%;
     z-index: -2;
     position: absolute;
-    left: 0px;
+    left: 10px;
 }
 
 
@@ -59,7 +71,7 @@ body {
     width: 30%;
     z-index: -1;
     position: absolute;
-    right: 0px;
+    right: 10px;
     top: 0px;
 }
 
