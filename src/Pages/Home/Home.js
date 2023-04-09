@@ -5,6 +5,7 @@ import Modal from "../../Components/Modal";
 import Time from "../../Components/Time"
 import Place from "../../Components/Place";
 import Colour from "../../Components/Colour";
+import './Home.css'
 
 
 
@@ -49,49 +50,36 @@ export default function Home(props) {
         setModal(false)
     }
 
-    //Saving to the list section:
-
-
-
-
-
-    //refreshing the title and description
-
-    //React.useEffect(setListItem(() => ({ title: "", description: "" })), [listItem])
 
 
 
     return (
-        <div className="main">
+        <>
+            {modal && <Modal
+                show={modal}
+                handleClose={hideModal}
+                colours={colour.value}
+                save={props.addItem}
+            />}
+            <div className="home-main">
 
-            <div className="Hero">
-                <div className="modal&colour">
-                    {modal && <Modal
-                        show={modal}
-                        handleClose={hideModal}
-                        colours={colour.value}
-                        save={props.addItem}
-                    />}
-                    <div className="colour-section">
+                <div className="colour-section">
 
-                        <div className="theme-bar">
-                            {colour.activated && <button className="save-button" onClick={showModal} >Save</button>}
+                    <div className="theme-bar">
+                        {colour.activated && <button className="save-button" onClick={showModal} >Save</button>}
 
-                            <Colour colours={colour.value}
-                                activated={colour.activated} />
+                        <Colour colours={colour.value}
+                            activated={colour.activated} />
 
-                        </div>
-
-
-                        <button className="buttons" onClick={setColours}>Choose My Colours</button>
                     </div>
+                    <button className="buttons" onClick={setColours}>Choose My Colours</button>
                 </div>
                 <hr />
-                <Time />
-                <hr />
-                <Place />
-                <hr />
+                <div className="time&place">
+                    <Time />
+                    <Place />
+                </div>
             </div>
-        </div>
+        </>
     )
 }
