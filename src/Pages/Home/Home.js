@@ -61,7 +61,7 @@ export default function Home(props) {
                 colours={colour.value}
                 save={props.addItem}
             />}
-            <div className="home-main">
+            <main className="home-main">
 
                 <div className="colour-section">
 
@@ -69,17 +69,19 @@ export default function Home(props) {
                         {colour.activated && <button className="save-button" onClick={showModal} >Save</button>}
 
                         <Colour colours={colour.value}
-                            activated={colour.activated} />
+                            activated={colour.activated}
+                            onClick={setColours}
+                            showModal={showModal} />
 
                     </div>
                     <button className="buttons" onClick={setColours}>Choose My Colours</button>
                 </div>
                 <hr />
-                <div className="time&place">
+                <div className="time-place">
                     <Time />
                     <Place />
                 </div>
-            </div>
+            </main>
         </>
     )
 }

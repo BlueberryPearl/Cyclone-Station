@@ -3,33 +3,11 @@
     flex-direction: row;
 }
 
-.colour-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
 
-.theme-bar {
-    position: relative;
-}
 
-.save-button {
-    position: absolute;
-    top: -20px;
-    right: -50px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    background-color: #f4f2f3;
-    color: #62466b;
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.7);
-    transition: all .4s ease;
-}
+
+
+
 
 .colours {
     display: grid;
