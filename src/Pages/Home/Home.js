@@ -6,11 +6,11 @@ import List from "../../Components/List";
 import Time from "../../Components/Time"
 import Place from "../../Components/Place";
 import Colour from "../../Components/Colour";
-import { nanoid } from "nanoid";
 
 
 
-export default function Home() {
+
+export default function Home(props) {
 
 
     const [colour, setColour] = React.useState({ value: ['', '', '', ''], activated: false })
@@ -52,53 +52,8 @@ export default function Home() {
 
     //Saving to the list section:
 
-    const [listItem, setListItem] = React.useState({ title: "", description: "" })
-    function updateProps(modalTitle, modalDescription) {
-        setListItem(() => ({ title: modalTitle, description: modalDescription }))
-    }
-
-    const [list, setList] = React.useState(() => {
-        const themeData = JSON.parse(localStorage.getItem('My-Themes'));
-        return themeData ? themeData : []
-    });
-    function addItem() {
-        setList(prevList => {
-            let newItem = {
-                theme: colour.value,
-                title: listItem.title,
-                description: listItem.description,
-                id: nanoid()
-            }
-
-            const newList = [newItem, ...prevList]
-            return (newList)
-        })
-    }
 
 
-
-
-    //saving list to local storage
-
-    React.useEffect(() => {
-        localStorage.setItem('My-Themes', JSON.stringify(list))
-    }, [list])
-
-
-
-    //Editing the title and description section
-    function updateListItem(itemId, editedTitle, editedDescription) {
-        setList(oldList => oldList.map(oldItem => {
-            return oldItem.id === itemId ? { ...oldItem, title: editedTitle, description: editedDescription } : oldItem
-        }))
-    }
-
-    //Deleting an item from the list
-
-    function remove(id) {
-        const newList = list.filter((item) => item.id !== id);
-        setList(newList)
-    }
 
 
     //refreshing the title and description
@@ -109,18 +64,16 @@ export default function Home() {
 
     return (
         <div className="main">
-            <List list={list}
-                update={updateListItem}
-                delete={remove} />
+            <List list={props.list}
+                update={props.updateItem}
+                delete={props.removeItem} />
             <div className="Hero">
                 <div className="modal&colour">
                     {modal && <Modal
                         show={modal}
                         handleClose={hideModal}
                         colours={colour.value}
-                        save={addItem}
-                        updateProps={updateProps}
-                        listItem={listItem}
+                        save={props.addItem}
                     />}
                     <div className="colour-section">
 
