@@ -59,11 +59,10 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
 
-                    <Route path="Home" element={<Home addItem={addItem}
-                        updateItem={updateItem}
+                    <Route path="Home" element={<Home addItem={addItem} />} />
+                    <Route path="SavedThemes" element={<SavedThemes updateItem={updateItem}
                         removeItem={removeItem}
                         list={list} />} />
-                    <Route path="SavedThemes" element={<SavedThemes />} />
                     <Route path="/" element={<LandingPage />} />
                 </Route>
             </Routes>

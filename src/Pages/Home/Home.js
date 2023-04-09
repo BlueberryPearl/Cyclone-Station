@@ -2,7 +2,6 @@ import React from "react";
 import 'react-toastify/dist/ReactToastify.css';
 //https://www.npmjs.com/package/react-toastify
 import Modal from "../../Components/Modal";
-import List from "../../Components/List";
 import Time from "../../Components/Time"
 import Place from "../../Components/Place";
 import Colour from "../../Components/Colour";
@@ -64,9 +63,7 @@ export default function Home(props) {
 
     return (
         <div className="main">
-            <List list={props.list}
-                update={props.updateItem}
-                delete={props.removeItem} />
+
             <div className="Hero">
                 <div className="modal&colour">
                     {modal && <Modal
