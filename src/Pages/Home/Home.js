@@ -1,11 +1,11 @@
 import React from "react";
 import 'react-toastify/dist/ReactToastify.css';
 //https://www.npmjs.com/package/react-toastify
-import Modal from "../Components/Modal";
-import List from "../Components/List";
-import Time from "../Components/Time"
-import Place from "../Components/Place";
-import Colour from "../Components/Colour";
+import Modal from "../../Components/Modal";
+import List from "../../Components/List";
+import Time from "../../Components/Time"
+import Place from "../../Components/Place";
+import Colour from "../../Components/Colour";
 import { nanoid } from "nanoid";
 
 

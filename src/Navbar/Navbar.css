@@ -44,6 +44,11 @@
     color: aliceblue;
 }
 
+.NavLink:active {
+    background-color: #20619e;
+    color: aliceblue;
+}
+
 .nav-pages>li {
     border-right: 2px solid #63a5e3;
     display: flex;
