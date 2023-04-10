@@ -1,5 +1,6 @@
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
+import './Modal.css'
 
 // this is the modal component for saving a colour theme and adding a title and description to it.
 export default function Modal(props) {
@@ -55,10 +56,10 @@ export default function Modal(props) {
 
                 </div>
                 <div className="modal-buttons">
-                    <button onClick={props.handleClose}>
+                    <button className="modal-cancel" onClick={props.handleClose}>
                         Cancel
                     </button>
-                    <button onClick={() => {
+                    <button className="modal-save" onClick={() => {
                         props.save(props.colours, title, description);
                         props.handleClose();
                     }}>Save</button>
