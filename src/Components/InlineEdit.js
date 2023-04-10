@@ -14,7 +14,7 @@ export default function InlineEdit({ value, setValue }) {
     }
 
     return (
-        <input className="item-title"
+        <input className="edit-title"
             type="text"
             aria-label="Title"
             value={editingValue}

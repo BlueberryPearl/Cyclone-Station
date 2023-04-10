@@ -3,7 +3,7 @@ import { toast, ToastContainer } from "react-toastify";
 import InlineEdit from "../InlineEdit";
 import DescriptionEditor from "../DescriptionEditor";
 import './ListItems.css'
-import Pen from './pen-solid.svg'
+import PenSvg from "./PenSvg";
 
 
 export default function ListItem(props) {
@@ -65,10 +65,10 @@ export default function ListItem(props) {
 
     return (
         <div className="list-item">
-            {emptyTitle ? <p title="Edit" onClick={addTitle} className="add-title"> Title <img className="edit-icon" src={Pen} alt="edit icon"></img></p> : <InlineEdit value={props.title}
+            {emptyTitle ? <p title="Edit" onClick={addTitle} className="add-title"> Title <PenSvg colour="#C00D9C" /></p> : <InlineEdit value={props.title}
                 setValue={updateTitle} />}
             <div className="colourBar">{colourBar}</div>
-            {emtyDescription ? <p title="Edit" onClick={addDescription} className="add-title"> Description <img className="edit-icon" src={Pen} alt="edit icon"></img></p> : <DescriptionEditor value={props.description}
+            {emtyDescription ? <p title="Edit" onClick={addDescription} className="add-title"> Description <PenSvg colour="#C00D9C" /></p> : <DescriptionEditor value={props.description}
                 setValue={updateDescription} />}
 
             <button title="Delete" className="remove" onClick={deleteItem}>&times;</button>

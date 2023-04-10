@@ -6,11 +6,11 @@
     border: 1px solid #80ADD6;
     background-color: #fefcfd;
     width: 200px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .item-title {
     font-weight: 600;
-    font-family: 'Work Sans', sans-serif;
     margin: 0px;
     margin-bottom: 5px;
     border-radius: 10px;
@@ -31,7 +31,6 @@
     color: #6b96e1;
     margin: 0px;
     padding-top: 5px;
-    font-family: 'Work Sans', sans-serif;
 }
 
 .list-item-colour-and-hex {
@@ -58,4 +57,48 @@
 .remove:hover {
     background-color: rgb(255, 223, 41);
     color: rgb(246, 83, 255);
+}
+
+.edit-description {
+    font-size: 10px;
+    color: #786c7e;
+    margin-top: 0px;
+    resize: vertical;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 4em;
+    background-color: #f4f4f4;
+    padding: 3px;
+    border: 0px;
+}
+
+.edit-title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border: 0px;
+    border-radius: 7px;
+}
+
+.edit-title:hover,
+.edit-description:hover {
+    background-color: #f8f2f9;
+    cursor: pointer;
+}
+
+.edit-title:focus,
+.edit-description:focus {
+    outline: 1px solid #bd97b2;
+    background-color: #f8f2f9;
+}
+
+.add-title {
+    font-size: 10px;
+    cursor: pointer;
+    color: #db2fb8;
+}
+
+.edit-icon {
+    height: 9px;
 }
