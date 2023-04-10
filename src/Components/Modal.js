@@ -10,12 +10,12 @@ export default function Modal(props) {
 
     let colourBar = props.colours.map(colour => {
         return (
-            <div className="modal-colour-block" onClick={() => {
+            <div className="modal-colour-and-hex" onClick={() => {
                 navigator.clipboard.writeText(colour);
                 toast('Copied');
             }}>
-                <div className="modal-colour" style={{ backgroundColor: colour, color: colour }}>xxxx</div>
-                <p>{colour}</p>
+                <div className="modal-colour-block" style={{ backgroundColor: colour, color: colour }}>xxxx</div>
+                <p className="modal-hex">{colour}</p>
                 <ToastContainer
                     position="top-right"
                     autoClose={1000}

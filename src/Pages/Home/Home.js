@@ -2,7 +2,7 @@ import React from "react";
 
 import Time from "../../Components/Time"
 import Place from "../../Components/Place";
-import Colour from "../../Components/Colour";
+import Colour from "../../Components/Colour/Colour";
 import './Home.css'
 
 

@@ -12,20 +12,6 @@
 
 
 
-.theme-bar {
-    position: relative;
-}
-
-.save-button {
-    position: absolute;
-    top: -20px;
-    right: -50px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all .4s ease;
-}
-
 hr {
     border: 0;
     height: 1px;

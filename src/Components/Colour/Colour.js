@@ -1,7 +1,8 @@
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
-import Modal from "./Modal";
+import Modal from "../Modal";
 import 'react-toastify/dist/ReactToastify.css';
+import './Colour.css'
 
 
 
@@ -50,9 +51,9 @@ export default function Colour(props) {
             <div onClick={() => {
                 navigator.clipboard.writeText(item);
                 toast('Copied');
-            }} className='colour-block' key={item}>
-                <div className="colour" style={{ backgroundColor: item, color: item }}>####</div>
-                <p>{item}</p>
+            }} className='colour-And-Hex' key={item}>
+                <div className="colour-block" style={{ backgroundColor: item }}></div>
+                <p className="hex">{item}</p>
                 <ToastContainer
                     position="top-right"
                     autoClose={1000}
@@ -69,7 +70,7 @@ export default function Colour(props) {
     })
 
     return (
-        <div>
+        <div className="Colour">
             {modal && <Modal
                 show={modal}
                 handleClose={hideModal}
@@ -87,10 +88,3 @@ export default function Colour(props) {
 }
 
 
-/* .colour-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-} */
