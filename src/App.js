@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./Pages/Home/Home";
 import LandingPage from "./Pages/LandingPage/Landing-page"
 import Layout from "./Pages/Layout";
-import SavedThemes from "./Pages/SavedThemes";
+import SavedThemes from "./Pages/SavedThemes/SavedThemes";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { nanoid } from "nanoid";
 
