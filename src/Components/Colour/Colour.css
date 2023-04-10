@@ -62,7 +62,8 @@
  }
 
  .colour-block,
- .modal-colour-block {
+ .modal-colour-block,
+ .list-item-colour-block {
      width: 100%;
      height: 100%;
      border: 1.5px solid #ffffff;

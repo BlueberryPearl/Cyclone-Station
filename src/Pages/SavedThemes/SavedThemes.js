@@ -1,5 +1,5 @@
 import React from "react";
-import ListItem from "../../Components/List-item";
+import ListItem from "../../Components/ListItems/List-item";
 import './SavedThemes.css'
 
 export default function SavedThemes(props) {
