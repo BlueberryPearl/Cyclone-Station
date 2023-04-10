@@ -44,3 +44,26 @@ hr {
     background-color: #1b8dff;
     color: rgb(250, 255, 250);
 }
+
+
+.place-section,
+.time-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBF3;
+    width: 200px;
+    height: 80px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0 rgba(99, 149, 227, 0.71);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    color: #8f650b;
+}
