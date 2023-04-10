@@ -51,7 +51,7 @@ export default function Colour(props) {
             <div onClick={() => {
                 navigator.clipboard.writeText(item);
                 toast('Copied');
-            }} className='colour-And-Hex' key={item}>
+            }} className='colour-And-Hex' key={item} title="Copy">
                 <div className="colour-block" style={{ backgroundColor: item }}></div>
                 <p className="hex">{item}</p>
                 <ToastContainer

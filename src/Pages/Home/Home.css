@@ -25,3 +25,22 @@ hr {
     flex-direction: row;
     justify-content: space-around;
 }
+
+.buttons {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    color: #1b8dff;
+    background-color: #FFFBF3;
+    width: 110px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #80ADD6;
+    box-shadow: 0px 3px 6px 0px rgba(99, 149, 227, 0.71);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.buttons:hover {
+    background-color: #1b8dff;
+    color: rgb(250, 255, 250);
+}
