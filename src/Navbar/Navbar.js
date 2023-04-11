@@ -10,10 +10,10 @@ export default function Navbar() {
             <ul className="nav-pages">
                 <li><NavLink to="/"><img className="logo" alt="Logo" src={Logo}></img></NavLink></li>
                 <li className="li-home">
-                    <NavLink className="NavLink NavLink-home" activeClassName="active-page" to="/Home">Home</NavLink>
+                    <NavLink className="NavLink NavLink-home" to="/Home">Home</NavLink>
                 </li>
                 <li className="li-savedThemes">
-                    <NavLink className="NavLink" activeClassName="active-page" to="/SavedThemes">Saved Themes</NavLink>
+                    <NavLink className="NavLink" to="/SavedThemes">Saved Themes</NavLink>
                 </li>
             </ul>
             <div className="nav-buttons">

@@ -19,7 +19,7 @@ export default function ListItem(props) {
     }
     let colourBar = props.theme.map(colour => {
         return (
-            <div className="list-item-colour-and-hex" onClick={() => {
+            <div key={colour} className="list-item-colour-and-hex" onClick={() => {
                 navigator.clipboard.writeText(colour);
                 toast('Copied');
             }}>
@@ -64,7 +64,7 @@ export default function ListItem(props) {
 
 
     return (
-        <div className="list-item">
+        <div className="list-item" key={props.itemId}>
             {emptyTitle ? <p title="Edit" onClick={addTitle} className="add-title"> Title <PenSvg colour="#C00D9C" /></p> : <InlineEdit value={props.title}
                 setValue={updateTitle} />}
             <div className="colourBar">{colourBar}</div>

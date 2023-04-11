@@ -47,8 +47,8 @@
 
 .NavLink:hover,
 .NavLink.active {
-    background-image: linear-gradient(#7cbbff, #7ab4e3);
-    color: rgb(148, 15, 181);
+    background-color: aliceblue;
+    color: #439fff;
 }
 
 .li-home,
