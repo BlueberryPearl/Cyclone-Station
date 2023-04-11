@@ -62,6 +62,7 @@ export default function Modal(props) {
                     <button className="modal-save" onClick={() => {
                         props.save(props.colours, title, description);
                         props.handleClose();
+                        toast('Saved')
                     }}>Save</button>
                 </div>
 
