@@ -1,0 +1,16 @@
+.main-st {
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px 2px #63a5e3;
+    max-width: 900px;
+}
+
+.savedThemes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-rows: auto;
+    gap: 10px;
+}

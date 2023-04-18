@@ -1,7 +1,9 @@
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
-import InlineEdit from "./InlineEdit";
-import DescriptionEditor from "./DescriptionEditor";
+import InlineEdit from "../InlineEdit";
+import DescriptionEditor from "../DescriptionEditor";
+import './ListItems.css'
+import PenSvg from "./PenSvg";
 
 
 export default function ListItem(props) {
@@ -17,12 +19,12 @@ export default function ListItem(props) {
     }
     let colourBar = props.theme.map(colour => {
         return (
-            <div className="list-item-block" onClick={() => {
+            <div key={colour} className="list-item-colour-and-hex" onClick={() => {
                 navigator.clipboard.writeText(colour);
                 toast('Copied');
             }}>
-                <div className="list-item-colour" style={{ backgroundColor: colour, color: colour }}>xxxx</div>
-                <p>{colour}</p>
+                <div className="list-item-colour-block" style={{ backgroundColor: colour }}></div>
+                <p className="list-item-hex">{colour}</p>
                 <ToastContainer
                     position="top-right"
                     autoClose={1000}
@@ -62,11 +64,11 @@ export default function ListItem(props) {
 
 
     return (
-        <div className="list-item">
-            {emptyTitle ? <p title="Edit" onClick={addTitle} className="add-title"> Title <img className="edit-icon" src="./Assests/pen-solid.svg"></img></p> : <InlineEdit value={props.title}
+        <div className="list-item" key={props.itemId}>
+            {emptyTitle ? <p title="Edit" onClick={addTitle} className="add-title"> Title <PenSvg colour="#C00D9C" /></p> : <InlineEdit value={props.title}
                 setValue={updateTitle} />}
-            <div>{colourBar}</div>
-            {emtyDescription ? <p title="Edit" onClick={addDescription} className="add-title"> Description <img className="edit-icon" src="./Assests/pen-solid.svg"></img></p> : <DescriptionEditor value={props.description}
+            <div className="colourBar">{colourBar}</div>
+            {emtyDescription ? <p title="Edit" onClick={addDescription} className="add-title"> Description <PenSvg colour="#C00D9C" /></p> : <DescriptionEditor value={props.description}
                 setValue={updateDescription} />}
 
             <button title="Delete" className="remove" onClick={deleteItem}>&times;</button>
