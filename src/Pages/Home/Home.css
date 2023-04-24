@@ -5,17 +5,17 @@
     background-color: aliceblue;
     border-radius: 10px;
     padding: 60px;
-    margin: 100px auto 100px auto;
+    margin: 100px auto;
     margin-bottom: 100px;
-    box-shadow: 0px 2px 8px 2px #63a5e3;
-    max-width: 600px;
+    box-shadow: 0px 3px 12px 3px #63a5e3;
+    max-width: 900px;
 }
 
 
 
 hr {
     border: 0;
-    height: 1px;
+    height: 1.5px;
     background: #333;
     background-image: linear-gradient(to right, #bad5ef, #80ADD6, #bad5ef);
     margin: 20px 0px 40px 0px;
@@ -30,13 +30,14 @@ hr {
 .buttons {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
+    font-size: 20px;
     color: #1b8dff;
     background-color: #FFFBF3;
-    width: 110px;
-    padding: 8px;
+    width: 165px;
+    padding: 12px;
     border-radius: 10px;
-    border: 1px solid #80ADD6;
-    box-shadow: 0px 3px 6px 0px rgba(99, 149, 227, 0.71);
+    border: 1.5px solid #80ADD6;
+    box-shadow: 0px 4.5px 9px 0px rgba(99, 149, 227, 0.71);
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -60,11 +61,11 @@ hr {
     justify-content: center;
     align-items: center;
     background-color: #FFFBF3;
-    width: 200px;
-    height: 80px;
+    width: 300px;
+    height: 120px;
     border-radius: 3px;
-    box-shadow: 0px 2px 4px 0 rgba(99, 149, 227, 0.71);
+    box-shadow: 0px 3px 6px 0 rgba(99, 149, 227, 0.71);
     font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
+    font-size: 21px;
     color: #8f650b;
 }
