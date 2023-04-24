@@ -12,24 +12,24 @@
 }
 
 .modal-container {
-    width: 500px;
-    height: 400px;
+    width: 750px;
+    height: 600px;
     border-radius: 10px;
     background-color: #fffdfa;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 7.5px 22.5px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     align-items: center;
 }
 
 .modal-main>h1 {
     margin: 0px;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 500;
     font-family: 'Work Sans', sans-serif;
     color: #67aef6;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
 }
 
@@ -42,9 +42,9 @@
 .x {
     background-color: transparent;
     border: none;
-    font-size: large;
+    font-size: 30px;
     cursor: pointer;
-    margin-left: 480px;
+    margin-left: 720px;
     color: #793acd;
     transition: all 0.5s ease;
 }
@@ -55,12 +55,12 @@
 
 .title>input {
     color: #4a4a4a;
-    padding: 5px;
+    padding: 7.5px;
     border-radius: 5px;
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 7.5px;
     background-color: #f4f2f3;
     box-shadow: rgba(177, 194, 221, 0.71) 2px 2px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     border: none;
@@ -74,14 +74,14 @@
 
 .description>textarea {
     color: #4a4a4a;
-    padding: 5px;
+    padding: 7.5px;
     border-radius: 5px;
     font-family: 'Oxygen', sans-serif;
-    margin-top: 5px;
-    margin-bottom: 40px;
+    margin-top: 7.5px;
+    margin-bottom: 60px;
     border: none;
-    width: 300px;
-    height: 50px;
+    width: 450px;
+    height: 75px;
     resize: none;
     background-color: #ffffff;
     box-shadow: rgba(177, 194, 221, 0.71) 2px 2px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
@@ -91,19 +91,20 @@
 .modal-buttons {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 45px;
 }
 
 .modal-save,
 .modal-cancel {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
+    font-size: 18px;
     color: #1b8dff;
     background-color: #ffffff;
-    width: 70px;
-    height: 25px;
+    width: 100px;
+    height: 40px;
     border-radius: 10px;
-    border: 1px solid #80ADD6;
+    border: 1.5px solid #80ADD6;
     box-shadow: 0px 3px 6px 0px rgba(99, 149, 227, 0.71);
     cursor: pointer;
     transition: all 0.5s ease;
@@ -122,5 +123,5 @@
 
 ::placeholder {
     font-family: 'Work Sans', sans-serif;
-    font-size: smaller;
+    font-size: 15px;
 }
