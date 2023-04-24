@@ -1,0 +1,48 @@
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    font-size: 16px;
+}
+
+
+#root {
+    margin: 0px;
+    height: 100%;
+}
+
+
+:root body {
+    --toastify-color-dark: #3a2e3f;
+
+    --toastify-toast-width: 125px;
+    --toastify-toast-background: #fff;
+    --toastify-toast-min-height: 75px;
+    --toastify-toast-max-height: 75px;
+    --toastify-font-family: sans-serif;
+    --toastify-z-index: 9999;
+
+    --toastify-text-color-dark: #fff;
+    --toastify-color-progress-dark: #bb86fc;
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #775881;
+    border-radius: 100vw;
+    border: 1.5px solid #f4f2f3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3b0e4a;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f2f3;
+    border-radius: 100vw;
+}

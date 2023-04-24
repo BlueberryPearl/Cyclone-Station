@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Cyclone-Station/static/css/main.9c900310.css",
+    "main.js": "/Cyclone-Station/static/js/main.b3cea722.js",
+    "static/media/Glass-pots.png": "/Cyclone-Station/static/media/Glass-pots.286a0dcaec8e210bc1a5.png",
+    "static/media/Squares1.png": "/Cyclone-Station/static/media/Squares1.546e4973beb17b5afcc1.png",
+    "static/media/logo.png": "/Cyclone-Station/static/media/logo.1031b2687057d0b989eb.png",
+    "index.html": "/Cyclone-Station/index.html",
+    "main.9c900310.css.map": "/Cyclone-Station/static/css/main.9c900310.css.map",
+    "main.b3cea722.js.map": "/Cyclone-Station/static/js/main.b3cea722.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c900310.css",
+    "static/js/main.b3cea722.js"
+  ]
+}
