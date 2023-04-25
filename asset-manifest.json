@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Cyclone-Station/static/css/main.64007cd0.css",
-    "main.js": "/Cyclone-Station/static/js/main.055c2e73.js",
+    "main.css": "/Cyclone-Station/static/css/main.8e8522ed.css",
+    "main.js": "/Cyclone-Station/static/js/main.a2b9bd94.js",
     "static/media/Glass-pots.png": "/Cyclone-Station/static/media/Glass-pots.286a0dcaec8e210bc1a5.png",
     "static/media/Squares1.png": "/Cyclone-Station/static/media/Squares1.546e4973beb17b5afcc1.png",
     "static/media/logo.png": "/Cyclone-Station/static/media/logo.1031b2687057d0b989eb.png",
     "index.html": "/Cyclone-Station/index.html",
-    "main.64007cd0.css.map": "/Cyclone-Station/static/css/main.64007cd0.css.map",
-    "main.055c2e73.js.map": "/Cyclone-Station/static/js/main.055c2e73.js.map"
+    "main.8e8522ed.css.map": "/Cyclone-Station/static/css/main.8e8522ed.css.map",
+    "main.a2b9bd94.js.map": "/Cyclone-Station/static/js/main.a2b9bd94.js.map"
   },
   "entrypoints": [
-    "static/css/main.64007cd0.css",
-    "static/js/main.055c2e73.js"
+    "static/css/main.8e8522ed.css",
+    "static/js/main.a2b9bd94.js"
   ]
 }
