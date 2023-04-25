@@ -3,7 +3,7 @@ import Home from "./Pages/Home/Home";
 import LandingPage from "./Pages/LandingPage/Landing-page"
 import Layout from "./Pages/Layout";
 import SavedThemes from "./Pages/SavedThemes/SavedThemes";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { nanoid } from "nanoid";
 
 export default function App() {
@@ -55,7 +55,7 @@ export default function App() {
 
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
 
@@ -66,7 +66,7 @@ export default function App() {
                     <Route path="/" element={<LandingPage />} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
 
     )
 }
