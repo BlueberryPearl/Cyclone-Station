@@ -19,9 +19,11 @@ export default function SavedThemes(props) {
 
     return (
         <main className="main-st">
-            <div className="savedThemes">
-                {newList}
-            </div>
+            {newList.length === 0 ?
+                (<div className="empty-themes"><p>No saved themes.</p></div>) :
+                (<div className="savedThemes">
+                    {newList}
+                </div>)}
         </main>
     )
 }
