@@ -16,15 +16,17 @@ export default function Home(props) {
 
 
     return (
-        <main className="home-main">
 
-            <div className="colour-section">
-                <Colour addItem={props.addItem} />
-            </div>
-            <hr />
-            <div className="time-place">
-                <Time />
-                <Place />
+        <main className="home-main">
+            <div className="home-hero">
+                <div className="colour-section">
+                    <Colour addItem={props.addItem} />
+                </div>
+                <hr />
+                <div className="time-place">
+                    <Time />
+                    <Place />
+                </div>
             </div>
         </main>
     )
