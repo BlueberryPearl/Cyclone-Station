@@ -25,6 +25,7 @@ export default function Home(props) {
                 <hr />
                 <div className="time-place">
                     <Time />
+                    <hr className="place-hr" />
                     <Place />
                 </div>
             </div>

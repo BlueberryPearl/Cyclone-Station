@@ -70,3 +70,47 @@
      border: 2.25px solid #ffffff;
      border-radius: 10px;
  }
+
+ .save-icon {
+     display: none;
+ }
+
+
+
+ @media screen and (max-width: 480px) {
+     .colours {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         justify-items: center;
+         gap: 7px;
+     }
+
+     .save-button {
+         display: none;
+     }
+
+     .save-icon {
+         display: block;
+         cursor: pointer;
+         max-width: 35px;
+         fill: #ef4782;
+     }
+
+     .colour-And-Hex {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         justify-items: center;
+         font-size: 14px;
+         text-align: center;
+         cursor: pointer;
+     }
+
+     .colour-block {
+         width: 70px;
+         height: 70px;
+         border: 2.25px solid #ffffff;
+         border-radius: 10px;
+     }
+ }

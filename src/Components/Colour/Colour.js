@@ -3,6 +3,7 @@ import { toast, ToastContainer } from "react-toastify";
 import Modal from "../Modal/Modal";
 import 'react-toastify/dist/ReactToastify.css';
 import './Colour.css'
+import { ReactComponent as Save } from "./heart-solid.svg";
 
 
 
@@ -77,6 +78,7 @@ export default function Colour(props) {
                 colours={colour.value}
                 save={props.addItem}
             />}
+            {colour.activated && <Save className="save-icon" onClick={showModal} />}
 
             {colour.activated && <button className="save-button" onClick={showModal} >Save</button>}
 
