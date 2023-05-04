@@ -30,3 +30,31 @@
     margin: auto;
     color: #4187c8;
 }
+
+
+
+
+@media screen and (max-width: 480px) {
+    .main-st {
+        padding: 10px;
+    }
+
+    .savedThemes {
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 10px 15px;
+        max-width: 470px;
+        position: relative;
+    }
+
+    .empty-themes {
+        font-size: 20px;
+        width: auto;
+        height: auto;
+        padding: 90px;
+        position: absolute;
+        top: 25%;
+        ;
+    }
+}
