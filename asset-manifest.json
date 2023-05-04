@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/Cyclone-Station/static/css/main.7eb2fe87.css",
-    "main.js": "/Cyclone-Station/static/js/main.a2b9bd94.js",
+    "main.css": "/Cyclone-Station/static/css/main.6f2d03e9.css",
+    "main.js": "/Cyclone-Station/static/js/main.6e897d77.js",
     "static/media/Glass-pots.png": "/Cyclone-Station/static/media/Glass-pots.286a0dcaec8e210bc1a5.png",
     "static/media/Squares1.png": "/Cyclone-Station/static/media/Squares1.546e4973beb17b5afcc1.png",
     "static/media/logo.png": "/Cyclone-Station/static/media/logo.1031b2687057d0b989eb.png",
     "index.html": "/Cyclone-Station/index.html",
-    "main.7eb2fe87.css.map": "/Cyclone-Station/static/css/main.7eb2fe87.css.map",
-    "main.a2b9bd94.js.map": "/Cyclone-Station/static/js/main.a2b9bd94.js.map"
+    "static/media/house-solid.svg": "/Cyclone-Station/static/media/house-solid.f7263f7ed43a76eb4206d1c09955f166.svg",
+    "static/media/heart-solid.svg": "/Cyclone-Station/static/media/heart-solid.2bc6d11c24a4c24f05e815351a3c8a62.svg",
+    "main.6f2d03e9.css.map": "/Cyclone-Station/static/css/main.6f2d03e9.css.map",
+    "main.6e897d77.js.map": "/Cyclone-Station/static/js/main.6e897d77.js.map"
   },
   "entrypoints": [
-    "static/css/main.7eb2fe87.css",
-    "static/js/main.a2b9bd94.js"
+    "static/css/main.6f2d03e9.css",
+    "static/js/main.6e897d77.js"
   ]
 }
