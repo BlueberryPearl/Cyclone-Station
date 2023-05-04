@@ -125,3 +125,41 @@
     font-family: 'Work Sans', sans-serif;
     font-size: 15px;
 }
+
+
+
+
+@media screen and (max-width: 480px) {
+    .modal-container {
+        max-width: 320px;
+        height: auto;
+        padding: 15px;
+        margin: 0px 10px;
+    }
+
+    .modal-main>h1 {
+        font-size: 25px;
+    }
+
+    .x {
+        font-size: 30px;
+        margin-left: 300px;
+    }
+
+    .description>textarea {
+        max-width: 300px;
+        max-height: 90px;
+        margin-bottom: 40px;
+    }
+
+    .modal-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-buttons {
+        margin-bottom: 30px;
+    }
+}

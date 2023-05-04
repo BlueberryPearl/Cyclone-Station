@@ -97,7 +97,8 @@
          fill: #ef4782;
      }
 
-     .colour-And-Hex {
+     .colour-And-Hex,
+     .modal-colour-and-hex {
          display: flex;
          flex-direction: column;
          justify-content: center;
@@ -107,7 +108,8 @@
          cursor: pointer;
      }
 
-     .colour-block {
+     .colour-block,
+     .modal-colour-block {
          width: 70px;
          height: 70px;
          border: 2.25px solid #ffffff;
