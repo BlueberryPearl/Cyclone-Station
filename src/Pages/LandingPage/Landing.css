@@ -109,3 +109,32 @@ body {
     }
 
 }
+
+
+@media screen and (max-width: 480px) {
+    .landing-main {
+        padding: 30px;
+    }
+
+    .landing-header {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .landing-paragraph {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .landing-button {
+        margin: 20px;
+    }
+
+    .pots {
+        position: relative;
+        margin: 0;
+        width: 100%;
+        top: 17px;
+        right: -60px;
+    }
+}
